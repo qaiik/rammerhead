@@ -26,7 +26,7 @@ const proxyServer = new RammerheadProxy({
     logger,
     loggerGetIP: config.getIP,
     bindingAddress: config.bindingAddress,
-    port: process.env.PORT,
+    port: config.port,
     crossDomainPort: config.crossDomainPort,
     dontListen: enableWorkers,
     ssl: config.ssl,
